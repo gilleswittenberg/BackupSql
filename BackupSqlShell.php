@@ -9,7 +9,7 @@ class BackupSqlShell extends AppShell {
 		$this->_backupDir = TMP . 'backups' . DS;
 		$config = isset($this->args[0]) ? $this->args[0] : 'default';
 		$filename = isset($this->args[1]) ? $this->args[1] : 'backup_sql_'.date('Y-m-d_H.i.s').'.sql';
-		//$backupDir = isset($this->args[2]) || $this->_backupDir;
+		//@todo $backupDir = isset($this->args[2]) || $this->_backupDir;
 
 		// check if database connection isset in app/Config/database.php
 		if (!array_key_exists($config, ConnectionManager::enumConnectionObjects())) {
