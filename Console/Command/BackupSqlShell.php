@@ -1,8 +1,9 @@
 <?php
+App::uses('AppShell', 'Shell');
 App::uses('ConnectionManager', 'Model');
 
 class BackupSqlShell extends AppShell {
-	
+
 	protected $_backupDir;
 
 	public function main() {
@@ -13,7 +14,7 @@ class BackupSqlShell extends AppShell {
 
 		// check if database connection isset in app/Config/database.php
 		if (!array_key_exists($config, ConnectionManager::enumConnectionObjects())) {
-			$this->err('Config specified does not exist in app/Config/database.php');		
+			$this->err('Config specified does not exist in app/Config/database.php');
 			$this->_stop();
 		}
 		// check if backup directory exists and prompt to create
@@ -37,7 +38,7 @@ class BackupSqlShell extends AppShell {
 				$this->_stop();
 			}
 		}
-		// backup 
+		// backup
 		$datasource = ConnectionManager::getDataSource($config);
 		$this->_backup($datasource->config, $filename);
 	}
