@@ -1,0 +1,27 @@
+{
+	"name": "gilleswittenberg/BackupSql",
+	"version": "0.0.1",
+	"description": "CakePHP shell that runs mysqldump on a database.",
+	"type": "cakephp-plugin",
+	"keywords": [
+		"cakephp"
+	],
+	"homepage": "http://github.com/gilleswittenberg/BackupSql",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Gilles Wittenberg",
+			"role": "Maintainer"
+		}
+	],
+	"require": {
+		"composer/installers": "*"
+	},
+	"support": {
+		"issues": "https://github.com/gilleswittenberg/BackupSql/issues",
+		"source": "https://github.com/gilleswittenberg/BackupSql"
+	},
+	"extra": {
+		"installer-name": "BackupSql"
+	}
+}
