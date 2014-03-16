@@ -18,7 +18,7 @@ Add the plugin to your project's `composer.json` - something like this:
 ```composer
 	{
 		"require": {
-			"gilleswittenberg/BackupSql": "dev-master"
+			"gilleswittenberg/backup-sql": "dev-master"
 		}
 	}
 ```
