@@ -1,5 +1,5 @@
 {
-	"name": "gilleswittenberg/BackupSql",
+	"name": "gilleswittenberg/backup-sql",
 	"version": "0.0.1",
 	"description": "CakePHP shell that runs mysqldump on a database.",
 	"type": "cakephp-plugin",
